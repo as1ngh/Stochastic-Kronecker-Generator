@@ -54,7 +54,7 @@ if __name__ =="__main__":
         ag = range(p['num_agents'])
 
         (conn, stats) = gg.create_graph_type(ag,p)
-        print p
-        print "Connected components:", stats['num_cc']
+        print(p)
+        print("Connected components:", stats['num_cc'])
         histogram(stats, 20*(1+int(p['num_agents']/60)))
 
